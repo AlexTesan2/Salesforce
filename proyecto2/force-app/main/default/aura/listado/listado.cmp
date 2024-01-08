@@ -1,0 +1,15 @@
+<aura:component>
+    <aura:handler event="c:evtData" action="{!c.handleEvtData}"/>
+    <aura:attribute name="mensaje" type="String"/>
+    <aura:attribute name="lista" type="String[]" default="['uno','dos','tres']"/>
+    <span>el ultimo elemento es {!v.mensaje}</span>
+    <table>
+        <aura:iteration items="{!v.lista}" var="elemento">
+            <tr>
+                <td>{!elemento}</td>
+            </tr>
+        </aura:iteration>
+    </table>
+
+    <input type="button" value="Limpiar Lista" onclick="{!c.clearlist}" />
+</aura:component>	

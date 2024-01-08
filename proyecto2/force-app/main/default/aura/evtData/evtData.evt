@@ -1,0 +1,5 @@
+<aura:event type="APPLICATION" description="Event template">
+    <aura:attribute name="mensaje"  type="String"/>
+    <aura:attribute name="apellido" type="String"/>
+    <aura:attribute name="lista" type="String[]" default="['uno','dos','tres']"/>
+</aura:event>

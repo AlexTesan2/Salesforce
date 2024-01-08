@@ -1,0 +1,6 @@
+<aura:component>
+    <aura:attribute name="nombre" type="String" default="Mundo"/>
+    <h1>Hola {!v.nombre}</h1>
+    <lightning:input type="text" label="Nombre" value="{!v.nombre}"/>
+    <lightning:button label="Saludar" onclick="{!c.saludar}"/>
+</aura:component>	
