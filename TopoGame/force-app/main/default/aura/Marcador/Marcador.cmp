@@ -1,0 +1,7 @@
+<aura:component controller="RandomApex">
+	<aura:handler event="c.Puntuacion" action="{!c.manejarEvento}"/>
+	<aura:attribute name="marcador" type="Integer" default="0"/>
+	tu marcador es {!v.marcador}
+	<input type="button" onclick="{!c.guardarScore}" value="Guardar"/>  
+	nombre del judador: <input type="text" aura:id="nombrejugador" value=""/>
+</aura:component>	
