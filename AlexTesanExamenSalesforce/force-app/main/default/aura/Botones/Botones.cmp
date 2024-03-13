@@ -1,0 +1,9 @@
+<aura:component controller="ElApex">
+    <aura:attribute name="MapeoClicks" type="Map" default="{}" />
+    <div class="blue DivBoton">
+        <a onclick="{!c.Clikado}" data-name="0" style="color: white;">0</a>
+    </div>
+    <div class="yellow DivBoton">
+        <a onclick="{!c.Clikado}" data-name="1" style="color: black;">1</a>
+    </div>
+</aura:component> 
