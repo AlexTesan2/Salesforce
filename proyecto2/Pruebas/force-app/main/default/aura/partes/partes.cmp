@@ -1,0 +1,6 @@
+<aura:component>
+    <aura:attribute name="partes" type="String[]" default="['Parte 1', 'Parte 2', 'Parte 3']"/>
+    <aura:iteration items="{!v.partes}" var="parte">
+        <p>{!parte}</p>
+    </aura:iteration>
+</aura:component>	

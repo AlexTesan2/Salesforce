@@ -1,0 +1,15 @@
+<aura:component controller="RandomApex">
+    <aura:attribute name="buttonClicks" type="Map" default="{}" />
+    <div class="red DivBoton">
+        <a onclick="{!c.handleButtonClick}" data-name="1" style="color: white;">1</a>
+    </div>
+    <div class="green DivBoton">
+        <a onclick="{!c.handleButtonClick}" data-name="2" style="color: white;">2</a>
+    </div>
+    <div class="blue DivBoton">
+        <a onclick="{!c.handleButtonClick}" data-name="3" style="color: white;">3</a>
+    </div>
+    <div class="yellow DivBoton">
+        <a onclick="{!c.handleButtonClick}" data-name="4" style="color: black;">4</a>
+    </div>
+</aura:component>

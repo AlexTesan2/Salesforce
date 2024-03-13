@@ -1,0 +1,27 @@
+.THIS {
+    /* Estilos generales para la clase THIS */
+
+}
+
+.THIS.DivBoton {
+    display: inline-block;
+    padding: 10px; 
+    font-size: 20px;
+}
+
+.THIS.red{
+    background-color: red;
+}
+
+.THIS.green{
+    background-color: green;
+}
+
+.THIS.blue{
+    background-color: blue;
+}
+
+.THIS.yellow{
+    background-color: yellow;
+}
+

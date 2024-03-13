@@ -3,3 +3,4 @@
     <aura:attribute name="apellido" type="String"/>
     <aura:attribute name="lista" type="String[]" default="['uno','dos','tres']"/>
 </aura:event>
+<!--notificador suscripcion-->

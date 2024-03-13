@@ -1,0 +1,42 @@
+<aura:component controller="RandomApex">
+    <aura:attribute name="buttonClicks" type="Map" default="{}" />
+    <aura:attribute name="SecuenciaActual" type="String" default="" />
+    <aura:attribute name="TodasLasSecuencias" type="List" default="[]" />
+    <aura:attribute name="isRecording" type="Boolean" default="false" />
+
+    <aura:handler event="c:ButtonClick" action="{!c.handleButtonClickEvent}" />
+
+    <lightning:button name="Grabar" label="Grabar" onclick="{!c.handleRecordClick}" />
+    <lightning:button name="Stop" label="Stop" onclick="{!c.handleStopClick}" />
+    <lightning:button name="Play" label="Play" onclick="{!c.handlePlay}" />
+    <lightning:button name="Guardar" label="Guardar" onclick="{!c.handleGuardar}" />
+
+    <p>Buttons pressed: {!v.SecuenciaActual}</p>
+
+    <p>Sequence:</p>
+    <aura:iteration items="{!v.TodasLasSecuencias}" var="seq"> <!--recorremos  la lista de todas las secuencias-->
+        <br/>
+        <aura:iteration items="{!seq}" var="buttonName"> <!--Por cada elemento de una secuencia, mostramos el nombre del botón que lo generó y su color-->
+            <aura:if isTrue="{!buttonName == '1'}">
+                <div class="DivBoton red">
+                    <a style="color: white;">{!buttonName}</a>
+                </div>
+            </aura:if>
+            <aura:if isTrue="{!buttonName == '2'}">
+                <div class="DivBoton green">
+                    <a style="color: white;">{!buttonName}</a>
+                </div>
+            </aura:if>
+            <aura:if isTrue="{!buttonName == '3'}">
+                <div class="DivBoton blue">
+                    <a style="color: white;">{!buttonName}</a>
+                </div>
+            </aura:if>
+            <aura:if isTrue="{!buttonName == '4'}">
+                <div class="DivBoton yellow">
+                    <a style="color: black;">{!buttonName}</a>
+                </div>
+            </aura:if>
+        </aura:iteration>
+    </aura:iteration>
+</aura:component>
